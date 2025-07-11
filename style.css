@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f9f9f9;
-  color: #333;
+  background: #0f172a; /* dark blue-gray */
+  color: #e5e7eb; /* soft light gray */
   padding-top: 80px;
   scroll-behavior: smooth;
 }
@@ -16,9 +16,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #ffffffee;
-  backdrop-filter: blur(8px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #1e293bcc; /* darker semi-transparent */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 15px 0;
   z-index: 1000;
   display: flex;
@@ -28,7 +28,7 @@ nav {
 }
 
 nav a {
-  color: #333;
+  color: #f8fafc;
   text-decoration: none;
   font-size: 1.05rem;
   font-weight: 600;
@@ -55,7 +55,7 @@ nav a.active::after {
 
 nav a:hover,
 nav a.active {
-  color: #f59e0b;
+  color: #facc15;
 }
 
 header {
@@ -74,20 +74,21 @@ main {
 }
 
 section {
-  background-color: white;
+  background-color: #1e293b; /* dark section cards */
   padding: 40px;
   margin-bottom: 40px;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, background 0.3s ease;
 }
 
 section:hover {
   transform: translateY(-4px);
+  background-color: #273549;
 }
 
 h1 {
-  color: #1f2937;
+  color: #facc15;
   font-size: 1.8rem;
   margin-bottom: 20px;
 }
@@ -97,12 +98,19 @@ p {
   line-height: 1.8;
   margin-bottom: 20px;
   text-align: justify;
+  color: #e2e8f0;
 }
 
 a {
+  color: #38bdf8;
   transition: all 0.3s ease;
 }
+
+a:hover {
+  color: #0ea5e9;
+}
+
 nav a.active {
-  color: #f59e0b;
+  color: #facc15;
   border-bottom: 2px solid #facc15;
 }
